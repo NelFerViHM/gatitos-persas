@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criadero de Gatitos Persas | Contacto</title>
+    <link rel="icon" href="IMG/icono.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="IMG/logo.png" alt="Logo Criadero" class="header-logo">
+            <div class="header-text">
+                <h1>Contacto</h1>
+                <p class="subtitle">Escríbenos para concretar tu adopción</p>
+            </div>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#presentacion">Nosotros</a></li>
+                <li><a href="index.html#cuidados">Cuidados</a></li>
+                <li><a href="index.html#disponibles">Disponibles</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Ponte en Contacto</h2>
+            <p>Escríbenos para consultar tus dudas o coordinar la entrega en Bernal Oeste.</p>
+
+            <form id="form-contacto" class="contact-form" onsubmit="enviarWhatsApp(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reserva">Gatitos seleccionados para reservar:</label>
+                    <input type="text" id="reserva" name="reserva" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Consulta o mensaje adicional</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Tienes alguna consulta adicional?"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje por WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Facebook Oficial -->
+            <a href="https://facebook.com" target="_blank" class="social-btn fb" aria-label="Visita nuestro Facebook">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" stroke="#1877F2"
+                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                <span>Facebook</span>
+            </a>
+
+            <!-- Instagram Oficial -->
+            <a href="https://instagram.com" target="_blank" class="social-btn ig" aria-label="Visita nuestro Instagram">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>Instagram</span>
+            </a>
+
+            <!-- TikTok Oficial -->
+            <a href="https://tiktok.com" target="_blank" class="social-btn tk" aria-label="Visita nuestro TikTok">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+                <span>TikTok</span>
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+        // Cargar los gatitos seleccionados desde el carrito al cargar la página
+        window.onload = function () {
+            const gatitos = JSON.parse(localStorage.getItem('gatitosReservados')) || [];
+            const inputReserva = document.getElementById('reserva');
+
+            if (gatitos.length > 0) {
+                inputReserva.value = gatitos.join(', ');
+            } else {
+                inputReserva.value = "Ningún gatito seleccionado.";
+            }
+        };
+
+        // Función que envía los datos del formulario a tu WhatsApp
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+
+            // 🔴 REEMPLAZA ESTE NÚMERO POR TU WHATSAPP REAL (Sin +, sin espacios, sin guiones)
+            // Debe incluir: 54 (País) + 9 (Móvil) + Código de área sin 0 + Número sin 15
+            const miTelefono = "5493886074604";
+
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const reserva = document.getElementById('reserva').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Validación de seguridad para comprobar que el número no quedó por defecto
+            if (miTelefono === "5491122334455") {
+                alert("⚠️ Error de configuración: Recuerda poner tu número de de WhatsApp real en el código.");
+                return;
+            }
+
+            // Creamos el texto del mensaje formateado para WhatsApp
+            const textoMensaje = `¡Hola Criadero Gatitos Persas! 👋%0A%0AMi nombre es: *${encodeURIComponent(nombre)}*%0ACorreo: ${encodeURIComponent(correo)}%0AEstoy interesado en reservar: *${encodeURIComponent(reserva)}*%0A%0AMensaje adicional: ${encodeURIComponent(mensaje)}`;
+
+            // Mensaje de confirmación alegre en pantalla
+            alert(`✨ ¡Gracias ${nombre}! Tu solicitud de reserva ha sido procesada con éxito.\n\nAl presionar ACEPTAR, te redirigiremos a WhatsApp para enviar el mensaje directo al criadero. 🐾`);
+
+            // Enlace estructurado con objeto nativo para forzar la salida externa de GitHub
+            const apiBase = "https:" + "//" + "wa.me" + "/";
+            const urlFinal = new URL(apiBase + miTelefono);
+            urlFinal.searchParams.append("text", decodeURIComponent(textoMensaje));
+
+            // Ejecuta la redirección forzada
+            window.location.replace(urlFinal.href);
+
+            // Limpieza de datos tras el éxito
+            localStorage.removeItem('gatitosReservados');
+            document.getElementById('form-contacto').reset();
+            document.getElementById('reserva').value = "Ningún gatito seleccionado.";
+        }
+    </script>
+
+
+</body>
+
+</html>

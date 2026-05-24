@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criadero de Gatitos Persas | Inicio</title>
+    <meta name="description"
+        content="Criadero familiar en Bernal Oeste. Crianza responsable de Gatitos Persas hermosos y saludables.">
+    <link rel="icon" href="IMG/icono.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="IMG/logo.png" alt="Logo Criadero" class="header-logo">
+            <div class="header-text">
+                <h1>Criadero de Gatitos Persas en Bernal</h1>
+                <p class="subtitle">Amor, naturaleza y pureza</p>
+            </div>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="#presentacion">Nosotros</a></li>
+                <li><a href="#cuidados">Cuidados</a></li>
+                <li><a href="#disponibles">Disponibles</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Nosotros -->
+        <section id="presentacion" class="content-section">
+            <h2>Nuestra Familia y Entorno</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Somos un <strong>criadero familiar hubicado en Bernal Oeste Partido de Quilmes Pcia. de
+                            Buenos Aires</strong> dedicado al bienestar y la cría responsable de
+                        Gatitos Persas. Ellos nacen y crecen en un ambiente familiar, donde disfrutan del aire libre
+                        y crecen en un entorno saludable y lleno de amor y en contacto permanente con nosotros,
+                        por lo cual estan acostumbrados al contacto permanente con personas.</p>
+                    <p>Nuestro deseo es entregar gatitos sanos, con un temperamento dulce y perfectamente adaptados a
+                        la vida en el hogar.</p>
+                    <h2>Contactenos por Whathsapp:</h2>
+                    <h3>Movil 1: 3886074604 (el numero es de Jujuy pero vivimos en Bernal Oeste)</h3>
+                    <h3>Movil 2: 1144137431</h3>
+                    <h4>Si lo desea puede concertar una visita tambien a estos numeros para conocerlos en persona</h4>
+                    <h4>Tambien puede ver la seccion Disponibles para ver sus fotos</h4>
+                </div>
+                <div class="about-IMG">
+                    <img src="IMG/criadero1.jpeg" alt="Entorno del criadero" class="about-img">
+                    <img src="IMG/criadero2.jpeg" alt="Nuestros michis" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Cuidados -->
+        <section id="cuidados" class="content-section highlight-section">
+            <h2>Cuidados Básicos del Persa</h2>
+            <p>Mantener a tu gatito persa feliz, saludable y con un pelaje espectacular requiere de atención constante y amor:</p>
+            <ul class="care-list">
+                <li><strong>Cepillado diario:</strong> Esencial para evitar nudos en su abundante pelo largo.</li>
+                <li><strong>Limpieza de facial:</strong> Cuidado diario de sus ojitos para evitar manchas por lagrimeo natural.</li>
+                <li><strong>Dieta adecuada:</strong> Alimento balanceado premium que cuide su digestión y pelaje.</li>
+                <li><strong>Muchos mimos y amor:</strong> Son gatos cariñosos y tranquilos que adoran la compañía familiar.</li>
+            </ul>
+        </section>
+
+        <!-- Sección Los Papas -->
+        <section id="los-papas" class="content-section">
+            <h2>Los papas</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Ambos padres son Persas. La mama <strong>Karo Lina</strong> es <strong>Persa Carey</strong>
+                        y el papa <strong>Milo</strong> es <strong>Persa Himalayo Red Point</strong>. Ambos
+                        cuidadosamente criados, alimentados con productos
+                        premium, con su calendario de vacunas al dia y criados en un entorno saludable
+                        y con mucho amor.</p>
+                </div>
+                <div class="about-IMG">
+                    <h2>Karo Lina</h2>
+                    <img src="IMG/mama_foto1.jpeg" alt="Entorno del criadero" class="about-img">
+                    <h2>Milo</h2>
+                    <img src="IMG/papa_foto1.jpeg" alt="Nuestros michis" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Galería de Gatitos Disponibles -->
+        <section id="disponibles" class="content-section">
+            <h2>Nuestros Gatitos Disponibles</h2>
+            <p>Elige al próximo integrante de tu familia:</p>
+            <p>Haz clic en la foto de cualquier gatito para ver su colección completa de imágenes.</p>
+
+            <div class="cards-grid">
+                <!-- Gatito 1 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_1.jpeg" alt="Gatito 1" onclick="abrirGaleria('Gatito 1', [
+                            'IMG/gatito1_foto1.jpeg', 'IMG/gatito1_foto2.jpeg', 'IMG/gatito1_foto3.jpeg', 'IMG/gatito1_foto4.jpeg', 'IMG/gatito1_foto5.jpeg', 'IMG/gatito1_foto6.jpeg'
+                        ])">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gatito 1 (Disponible)</h3>
+                        <span class="badge girl">Hembra</span>
+                        <p>Persa Himalaya Red Point con ojos celestes. Dulce y juguetona.</p>
+                        <button class="add-cart-btn" onclick="agregarAlCarrito('Gatito 1')">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Gatito 2 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_2.jpeg" alt="Gatito 2" onclick="abrirGaleria('Gatito 2', [
+                            'IMG/gatito2_foto1.jpeg', 'IMG/gatito2_foto2.jpeg', 'IMG/gatito2_foto3.jpeg', 'IMG/gatito2_foto4.jpeg', 'IMG/gatito2_foto5.jpeg', 'IMG/gatito2_foto6.jpeg'
+                        ])">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gatito 2 (Disponible)</h3>
+                        <span class="badge boy">Macho</span>
+                        <p>Persa Himalayo Blue Point muy activo. Adora explorar el jardín.</p>
+                        <button class="add-cart-btn" onclick="agregarAlCarrito('Gatito 2')">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Gatito 3 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_3.jpeg" alt="Gatito 3" onclick="abrirGaleria('Gatito 3', [
+                            'IMG/gatito3_foto1.jpeg', 'IMG/gatito3_foto2.jpeg', 'IMG/gatito3_foto3.jpeg', 'IMG/gatito3_foto4.jpeg', 'IMG/gatito3_foto5.jpeg'
+                        , 'IMG/gatito3_foto6.jpeg'])">
+                    </div>
+                    <div class="card-content">
+                        <h3 style="color:red">Gatito 3 (Vendido)</h3>
+                        <span class="badge boy">Macho</span>
+                        <p>Persa Blue. El más mimado y tranquilo del grupo.</p>
+                        <button class="add-cart-btn" onclick="" disabled>Vendido</button>
+                    </div>
+                </div>
+
+                <!-- Gatito 4 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_4.jpeg" alt="Gatito 4" onclick="abrirGaleria('Gatito 4', [
+                            'IMG/gatito4_foto1.jpeg', 'IMG/gatito4_foto2.jpeg', 'IMG/gatito4_foto3.jpeg', 'IMG/gatito4_foto4.jpeg', 'IMG/gatito4_foto5.jpeg'
+                        , 'IMG/gatito4_foto6.jpeg'
+                        ])">
+                    </div>
+                    <div class="card-content">
+                        <h3 style="color:red">Gatito 4 (Vendido)</h3>
+                        <span class="badge girl">Hembra</span>
+                        <p>Persa Red Tabby. Tiene un pelaje espectacular y ojos redondos.</p>
+                        <button class="add-cart-btn" onclick="" disabled>Vendido</button>
+                    </div>
+                </div>
+
+                <!-- Gatito 5 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_5.jpeg" alt="Gatito 5" onclick="abrirGaleria('Gatito 5', [
+                            'IMG/gatito5_foto1.jpeg', 'IMG/gatito5_foto2.jpeg', 'IMG/gatito5_foto3.jpeg', 'IMG/gatito5_foto4.jpeg', 'IMG/gatito5_foto5.jpeg', 'IMG/gatito5_foto6.jpeg'
+                        ])">
+                    </div>
+                    <div class="card-content">
+                        <h3 style="color:red">Gatito 5 (Vendido)</h3>
+                        <span class="badge girl">Hembra</span>
+                        <p>Persa Calico Difuminado. Muy cariñosa, ideal para familias.</p>
+                        <button class="add-cart-btn" onclick="" disabled>Vendido</button>
+                    </div>
+                </div>
+
+                <!-- Gatito 6 -->
+                <div class="cat-card">
+                    <div class="card-image">
+                        <img src="IMG/gatito_6.jpeg" alt="Gatito 6" onclick="abrirGaleria('Gatito 6', [
+                            'IMG/gatito6_foto1.jpeg', 'IMG/gatito6_foto2.jpeg', 'IMG/gatito6_foto3.jpeg', 'IMG/gatito6_foto4.jpeg', 'IMG/gatito6_foto5.jpeg', 'IMG/gatito6_foto6.jpeg'
+                        ])">
+                    </div>
+                    <div class="card-content">
+                        <h3 style="color:red">Gatito 6 (Vendido)</h3>
+                        <span class="badge girl">Hembra</span>
+                        <p>Persa Himalaya Red Point. Ojos color cielo espectaculares super mimosa.</p>
+                        <button class="add-cart-btn" onclick="" disabled>Vendido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Carrito -->
+        <section id="carrito" class="content-section">
+            <h2>Tu Selección de Michis</h2>
+            <div class="cart-box">
+                <p id="cart-empty-msg">Tu selección está vacía por el momento.</p>
+                <ul id="cart-items-list" class="cart-list"></ul>
+                <button class="checkout-btn" onclick="procesarCompra()">Confirmar Reserva</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para las galerías de fotos -->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarGaleria()">&times;</span>
+            <h2 id="modal-titulo">Fotos del Gatito</h2>
+            <div id="modal-grid" class="modal-grid"></div>
+        </div>
+    </div>
+
+    <!-- Modal para ampliar la foto con Navegación (Lightbox) -->
+    <div id="modalVisor" class="modal-visor">
+        <span class="cerrar-visor" onclick="cerrarVisor()">&times;</span>
+
+        <!-- Flechas de navegación -->
+        <a class="prev" onclick="cambiarFoto(-1)">&#10094;</a>
+        <a class="next" onclick="cambiarFoto(1)">&#10095;</a>
+
+        <img id="fotoAmpliada" src="" alt="Foto ampliada" onclick="cambiarFoto(1)">
+        <div id="caption" style="color: white; margin-top: 10px; font-weight: bold;"></div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <!-- Facebook Oficial -->
+            <a href="https://facebook.com" target="_blank" class="social-btn fb" aria-label="Visita nuestro Facebook">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" stroke="#1877F2"
+                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                <span>Facebook</span>
+            </a>
+
+            <!-- Instagram Oficial -->
+            <a href="https://instagram.com" target="_blank" class="social-btn ig" aria-label="Visita nuestro Instagram">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>Instagram</span>
+            </a>
+
+            <!-- TikTok Oficial -->
+            <a href="https://tiktok.com" target="_blank" class="social-btn tk" aria-label="Visita nuestro TikTok">
+                <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+                <span>TikTok</span>
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+        const carrito = [];
+
+        function agregarAlCarrito(nombreGatito) {
+            if (!carrito.includes(nombreGatito)) {
+                carrito.push(nombreGatito);
+                actualizarInterfaz();
+            } else {
+                alert(nombreGatito + ' ya está en tu lista de reserva.');
+            }
+        }
+
+        function removerDelCarrito(nombreGatito) {
+            const index = carrito.indexOf(nombreGatito);
+            if (index > -1) {
+                carrito.splice(index, 1);
+                actualizarInterfaz();
+            }
+        }
+
+        function actualizarInterfaz() {
+            const emptyMsg = document.getElementById('cart-empty-msg');
+            const list = document.getElementById('cart-items-list');
+            list.innerHTML = '';
+
+            if (carrito.length === 0) {
+                emptyMsg.style.display = 'block';
+            } else {
+                emptyMsg.style.display = 'none';
+                carrito.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<span>🐱 ${item}</span> <button class="remove-btn" onclick="removerDelCarrito('${item}')">Quitar</button>`;
+                    list.appendChild(li);
+                });
+            }
+        }
+
+        function procesarCompra() {
+            if (carrito.length === 0) {
+                alert('Selecciona al menos un gatito antes de confirmar.');
+            } else {
+                // Guardamos la selección temporalmente para usarla en la página de contacto
+                localStorage.setItem('gatitosReservados', JSON.stringify(carrito));
+                alert('¡Gatitos listos para reservar! Completa el formulario de contacto para finalizar.');
+                window.location.href = "contacto.html";
+            }
+        }
+
+        let fotosActuales = []; // Guardará las fotos del gatito abierto
+        let indiceActual = 0;   // Guardará cuál foto estamos viendo
+
+        function abrirGaleria(nombreGatito, listaFotos) {
+            const modal = document.getElementById("miModal");
+            const titulo = document.getElementById("modal-titulo");
+            const grid = document.getElementById("modal-grid");
+
+            fotosActuales = listaFotos; // Guardamos la lista para el visor
+            titulo.innerText = "Fotos de " + nombreGatito;
+            grid.innerHTML = "";
+
+            listaFotos.forEach((fotoUrl, index) => {
+                const img = document.createElement("img");
+                img.src = fotoUrl;
+                img.onclick = () => abrirVisor(index); // Abrimos el visor en la foto clicada
+                grid.appendChild(img);
+            });
+
+            modal.style.display = "block";
+        }
+
+        function abrirVisor(index) {
+            indiceActual = index;
+            document.getElementById("modalVisor").style.display = "block";
+            actualizarFotoVisor();
+        }
+
+        function cerrarVisor() {
+            document.getElementById("modalVisor").style.display = "none";
+        }
+
+        function cambiarFoto(direccion) {
+            indiceActual += direccion;
+            // Efecto infinito: si llega al final, vuelve al principio
+            if (indiceActual >= fotosActuales.length) { indiceActual = 0; }
+            if (indiceActual < 0) { indiceActual = fotosActuales.length - 1; }
+            actualizarFotoVisor();
+        }
+
+        function actualizarFotoVisor() {
+            const visorImg = document.getElementById("fotoAmpliada");
+            visorImg.src = fotosActuales[indiceActual];
+            document.getElementById("caption").innerText = `Imagen ${indiceActual + 1} de ${fotosActuales.length}`;
+        }
+
+        // Para cerrar con la tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape") cerrarVisor();
+            if (e.key === "ArrowRight") cambiarFoto(1);
+            if (e.key === "ArrowLeft") cambiarFoto(-1);
+        });
+
+
+        function cerrarGaleria() {
+            document.getElementById("miModal").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById("miModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
